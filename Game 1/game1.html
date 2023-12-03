@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spot The Differences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        *{
+            font-family: 'Montserrat';
+        }
+        #mode{
+            font-family: 'Rubik Bubbles';
+        }
+    </style>
+</head>
+<body class="bg-indigo-100 flex justify-center items-center h-screen flex-col gap-10">
+    <!-- <h1>Spot The Differences</h1>
+    <a href="Assets/html/spotTheDifference.html?mode=easy"><button type="button">Easy</button></a>
+    <a href="Assets/html/spotTheDifference.html?mode=medium"><button type="button">Medium</button></a>
+    <a href="Assets/html/spotTheDifference.html?mode=hard"><button type="button">Hard</button></a> -->
+    <div class="flex gap-10">
+        <div class="hover:scale-110 transition duration-150 ease-in-out h-[180px] border border-2 border-gray-500 w-[200px] rounded-md drop-shadow-2xl cursor-pointer" onclick="easy()">
+            <h1 id="mode" class="h-[100px] text-4xl flex items-center justify-center bg-emerald-500 rounded-t text-white">Easy</h1>
+            <div class="flex bg-teal-200 h-[76px] rounded-b">
+                <div class="w-full justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">3</h1>
+                    <h4 class="text-center font-medium">Card Pairs</h4>
+                </div>
+                <div class="w-full justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">10</h1>
+                    <h4 class="text-center font-medium">Chances</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hover:scale-110 transition duration-150 ease-in-out h-[180px] border border-2 border-gray-500 w-[200px] rounded-md drop-shadow-2xl cursor-pointer" onclick="medium()">
+            <h1 id="mode" class="h-[100px] text-4xl flex items-center justify-center bg-green-400 text-white rounded-t">Medium</h1>
+            <div class="flex bg-lime-200 h-[76px] rounded-b">
+                <div class="w-full justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">5</h1>
+                    <h4 class="text-center font-medium">Card Pairs</h4>
+                </div>
+                <div class="w-full  justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">20</h1>
+                    <h4 class="text-center font-medium">Chances</h4>
+                </div>
+            </div>
+        </div>
+        <div class="hover:scale-110 transition duration-150 ease-in-out h-[180px] border border-2 border-gray-500 w-[200px] rounded-md drop-shadow-2xl cursor-pointer" onclick="hard()">
+            <h1 id="mode" class="h-[100px] text-4xl flex items-center justify-center bg-orange-400 text-white rounded-t">Hard</h1>
+            <div class="flex bg-amber-200 h-[76px] rounded-b">
+                <div class="w-full  justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">7</h1>
+                    <h4 class="text-center font-medium">Card Pairs</h4>
+                </div>
+                <div class="w-full  justify-center flex flex-col ">
+                    <h1 class="text-center text-xl font-bold">30</h1>
+                    <h4 class="text-center font-medium">Chances</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="mainMenu()" class="hover:scale-110 transition duration-150 ease-in-out py-3 bg-violet-500 px-6 rounded-full text-white font-extrabold bg-emerald-500 ">Main Menu</button>
+    <script>
+        function easy(){
+            window.location.href = "./Assets/html/matchingPairs.html?mode=easy"
+        }
+        function medium(){
+            window.location.href = "./Assets/html/matchingPairs.html?mode=medium"
+        }
+        function hard() {
+            window.location.href = "./Assets/html/matchingPairs.html?mode=href"
+        }
+        function mainMenu() {
+            window.location.href = "../index.html"
+        }
+    </script>
+</body>
+</html>

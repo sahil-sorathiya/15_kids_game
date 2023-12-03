@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Pairs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>
+    <style>
+      *{
+        font-family: 'Montserrat', sans-serif;
+      }
+      body {
+        background-color: #D3CEDC;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .my-bg-x{
+        background-color: #676573;
+      }
+      
+      .my-bg-y{
+        background-color: #201B4F;
+      }
+
+      .my-preserve-3d {
+        transform-style: preserve-3d;
+      }
+
+      .my-transform-y-180 {
+        transform: rotateY(180deg);
+      }
+
+      .my-backface-hidden {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+    </style>
+    <link rel="stylesheet" href="../css/confettis.css">
+    <link rel="stylesheet" href="../css/loader.css">
+</head>
+<body class="flex flex-col gap-6 items-center max-h-screen py-10">
+  <div id="svg1" class="w-content h-content flex flex-col items-center gap-6"></div>
+  <div id="remained-moves"></div>
+  <div id="svg2"></div> 
+  <div id="row1" class="row flex gap-10"></div>
+  <div id="row2" class="row flex gap-10"></div>
+  <div id="won" class="flex flex-col items-center gap-2"></div>
+  <div id="btns" class="flex gap-4">
+    <button id="restart-btn" class="font-medium button my-bg-y py-2 px-4 rounded text-gray-100">Restart</button>
+    <button id="menu-btn" class="font-medium button my-bg-x py-2 px-4 rounded text-gray-100">Menu</button>
+  </div>
+  <div id="audio-div">
+    <audio id="main-bg-audio" autoplay="true" loop="true">
+      <source id="main-bg-audio-source" src="../../public/sounds/main-bg.mp3" type="audio/mpeg">
+    </audio>  
+  </div>
+
+  <script>
+    const mainBgAudio = document.getElementById("main-bg-audio")
+    mainBgAudio.volume = 0.2
+  </script>
+  <script src="../js/matchingPairs.js" type="module"></script>
+  <script src="../js/utils.js" type="module"></script>
+</body>
+</html>
