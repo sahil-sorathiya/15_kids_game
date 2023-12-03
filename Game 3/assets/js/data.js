@@ -1,5 +1,4 @@
 export const dataArray = [
-
     {
         id: 1,
         first:{
@@ -44,7 +43,7 @@ export const dataArray = [
             url: "../../public/images/milk.jpg"
         }
     },
- {
+    {
         id: 5,
         first:{
             title: "Tea",
@@ -54,7 +53,7 @@ export const dataArray = [
             title: "Cup",
             url: "../../public/images/cup.jpg"
         }
-    }
+    },
     {
         id: 6,
         first:{
@@ -66,7 +65,7 @@ export const dataArray = [
             url: "../../public/images/shuttle cock.jpg"
         }
     },
- {
+    {
         id: 7,
         first:{
             title: "Deer",
@@ -77,7 +76,7 @@ export const dataArray = [
             url: "../../public/images/leaf.jpg"
         }
     },
- {
+    {
         id: 8,
         first:{
             title: "Mango",
@@ -88,7 +87,7 @@ export const dataArray = [
             url: "../../public/images/juice.jpg"
         }
     },
- {
+    {
         id: 9,
         first:{
             title: "Train",
@@ -99,7 +98,7 @@ export const dataArray = [
             url: "../../public/images/track.jpeg"
         }
     },
- {
+    {
         id: 10,
         first:{
             title: "Car",
@@ -110,7 +109,7 @@ export const dataArray = [
             url: "../../public/images/wheel.jpeg"
         }
     },
- {
+    {
         id: 11,
         first:{
             title: "Chalk",
@@ -121,7 +120,7 @@ export const dataArray = [
             url: "../../public/images/duster.jpg"
         }
     },
- {
+    {
         id: 12,
         first:{
             title: "Bag",
@@ -133,7 +132,7 @@ export const dataArray = [
 
         }
     },
- {
+    {
         id: 13,
         first:{
             title: "Fish",
@@ -144,7 +143,7 @@ export const dataArray = [
             url: "../../public/images/water.jpeg"
         }
     },
- {
+    {
         id: 14,
         first:{
             title: "Doctor",
@@ -155,7 +154,7 @@ export const dataArray = [
             url: "../../public/images/stethoscope.jpeg"
         }
     },
- {
+    {
         id: 15,
         first:{
             title: "School",
@@ -166,7 +165,7 @@ export const dataArray = [
             url: "../../public/images/uniform.jpg"
         }
     },
- {
+    {
         id: 16,
         first:{
             title: "Mountains",
@@ -177,7 +176,7 @@ export const dataArray = [
             url: "../../public/images/snow.jpg"
         }
     },
- {
+    {
         id: 17,
         first:{
             title: "Bat",
@@ -188,7 +187,7 @@ export const dataArray = [
             url: "../../public/images/ball.jpg"
         }
     },
- {
+    {
         id: 18,
         first:{
             title: "Camel",
